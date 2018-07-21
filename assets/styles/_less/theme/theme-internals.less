@@ -1,0 +1,37 @@
+#internals {
+  background: url("@{image-path-theme}/backgrounds/bck-base-internals-001.jpg") top left no-repeat #014887;
+  background-size: cover;
+  margin: 0;
+  padding: 0 0 180px 0;
+  min-height: 100vh;
+  .wrapper {
+    position: relative;
+  }
+  @media (max-width: @screen-sm) {
+  }
+}
+
+.progress {
+  transform: skew(-20deg, 0deg);
+  border-radius: 0;
+  border: 0;
+  height: 12px;
+  margin-bottom: 4px;
+  .progress-bar {
+    box-shadow: none;
+    background: #4fc0aa; /* Old browsers */
+    background: -moz-linear-gradient(left, #4fc0aa 0%, #a3ce3c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #4fc0aa 0%, #a3ce3c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #4fc0aa 0%, #a3ce3c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4fc0aa', endColorstr='#a3ce3c', GradientType=1); /* IE6-9 */
+  }
+}
+
+.circle {
+  .percentual {
+    font-size: @fontsize-xs;
+  }
+  .circles-text {
+    left: 70px !important;
+  }
+}
