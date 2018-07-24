@@ -73,15 +73,17 @@
                                         <h1>Buttons</h1>
                                         <p class="lead">With no gradients and borders, Bootstrap 3.0 buttons now have a flatter look</p>
                                     </div>
-        
+                                    
                                     <h2>Button Sizes (4)</h2>
                                     <ul class="the-buttons clearfix list-unstyled">
                                         <li><a class="btn btn-xs btn-primary" href="#">btn-xs</a></li>
                                         <li><a class="btn btn-sm btn-primary" href="#">btn-sm</a></li>
                                         <li><a class="btn btn-primary" href="#">btn</a></li>
-                                        <li><a class="btn btn-lg btn-primary" data-toggle="modal" href="#myModal">modal</a></li>
+                                        <li>
+                                            <a class="btn btn-lg btn-primary" data-toggle="modal" href="#myModal">modal</a>
+                                        </li>
                                     </ul>
-        
+                                    
                                     <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
@@ -99,7 +101,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
+                                    
                                     <h2>Button Classes</h2>
                                     <ul class="the-buttons clearfix">
                                         <li><a class="btn btn-default" href="#">Default</a></li>
@@ -125,128 +127,78 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li><a class="btn btn-info" href="#"><i class="glyphicon glyphicon-map-marker"></i> Icon</a></li>
+                                        <li>
+                                            <a class="btn btn-info" href="#"><i class="glyphicon glyphicon-map-marker"></i> Icon</a>
+                                        </li>
                                     </ul>
-    
-    
-    
+                                
+                                
                                 </section>
-    
-    
+                                
+                                
                                 <section>
                                     <div class="page-header">
                                         <h2>Forms</h2>
                                     </div>
-        
+                                    
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <h3>Form Inline</h3>
-                
-                                            <form class="form-inline well">
-                                                <div class="col-md-3">
-                                                    <input type="text" class="form-control" placeholder="Email">
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <input type="password" class="form-control" placeholder="Password">
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox"> Remember me
-                                                    </label>
-                                                </div>
-                                                <button type="submit" class="btn btn-default">Sign in</button>
-                                            </form>
-                
+                                            
+                                            <div class="well">
+                                                <form class="form-inline">
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Remember me
+                                                        </label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-default">Sign in</button>
+                                                </form>
+                                            </div>
+                                            
                                             <h3>Form Horizontal</h3>
-                                            <form class="form-horizontal well">
-                                                <fieldset>
-                                                    <legend>Bootstrap 3 Inputs</legend>
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="input01">Text input</label>
-                                                        <div class="controls">
-                                                            <input type="text" class="form-control input-xlarge" id="input01">
-                                                            <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>
-                                                        </div>
+                                            <div class="well">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Email address</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                                                     </div>
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="optionsCheckbox">Checkbox</label>
-                                                        <div class="controls">
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" id="optionsCheckbox" value="option1">
-                                                                Option one is this and that—be sure to include why it's great
-                                                            </label>
-                                                        </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Password</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                                     </div>
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="select01">Select list</label>
-                                                        <div class="controls">
-                                                            <select id="select01" class="form-control">
-                                                                <option>something</option>
-                                                                <option>2</option>
-                                                                <option>3</option>
-                                                                <option>4</option>
-                                                                <option>5</option>
-                                                            </select>
-                                                        </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputFile">File input</label>
+                                                        <input type="file" id="exampleInputFile">
+                                                        <p class="help-block">Example block-level help text here.</p>
                                                     </div>
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="multiSelect">Multicon-select</label>
-                                                        <div class="controls">
-                                                            <select multiple="multiple" id="multiSelect" class="form-control">
-                                                                <option>1</option>
-                                                                <option>2</option>
-                                                                <option>3</option>
-                                                                <option>4</option>
-                                                                <option>5</option>
-                                                            </select>
-                                                        </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Check me out
+                                                        </label>
                                                     </div>
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="fileInput">File input</label>
-                                                        <div class="controls">
-                                                            <input class="form-control input-file" id="fileInput" type="file">
-                                                        </div>
-                                                    </div>
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="textarea">Textarea</label>
-                                                        <div class="controls">
-                                                            <textarea class="form-control input-xlarge" id="textarea" rows="3"></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="optionsCheckbox2">Disabled checkbox</label>
-                                                        <div class="controls">
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" id="optionsCheckbox2" value="option1" disabled="">
-                                                                This is a disabled checkbox
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="control-group warning">
-                                                        <label class="control-label" for="inputWarning">Input with warning</label>
-                                                        <div class="controls">
-                                                            <input type="text" id="inputWarning" class="form-control">
-                                                            <span class="help-inline">Something may have gone wrong</span>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <div class="form-actions">
-                                                        <button type="submit" class="btn btn-primary">Save changes</button>
-                                                        <button type="reset" class="btn">Cancel</button>
-                                                    </div>
-                                                </fieldset>
-                                            </form>
+                                                    <button type="submit" class="btn btn-default">Submit</button>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
-    
+                                
                                 </section>
-    
+                                
                                 
                                 <section>
                                     <div class="page-header">
                                         <h1>Tables</h1>
                                     </div>
-        
+                                    
                                     <table class="table table-bordered table-striped table-hover">
                                         <thead>
                                             <tr>
@@ -278,16 +230,16 @@
                                         </tbody>
                                     </table>
                                 </section>
-    
-    
+                                
+                                
                                 <section>
                                     <div class="page-header">
                                         <h1>Miscellaneous</h1>
                                     </div>
-        
+                                    
                                     <div class="row">
                                         <div class="col-lg-4">
-                
+                                            
                                             <h3 id="breadcrumbs">Breadcrumbs</h3>
                                             <ul class="breadcrumb">
                                                 <li><a href="#">Home</a> <span class="divider"></span></li>
@@ -307,15 +259,15 @@
                                                 <li><a href="#">»</a></li>
                                             </ul>
                                         </div>
-            
+                                        
                                         <div class="col-lg-4">
                                             <h3 id="pager">Pagers</h3>
-                
+                                            
                                             <ul class="pager">
                                                 <li><a href="#">Previous</a></li>
                                                 <li><a href="#">Next</a></li>
                                             </ul>
-                
+                                            
                                             <ul class="pager">
                                                 <li class="previous disabled"><a href="#">? Older</a></li>
                                                 <li class="next"><a href="#">Newer ?</a></li>
@@ -326,9 +278,9 @@
                                 
                                 
                                 <section>
-    
+                                    
                                     <h2 id="panels">Bootstrap 3 Panels</h2>
-    
+                                    
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <div class="panel panel-default">
@@ -353,11 +305,11 @@
                                 </section>
                                 
                                 <section>
-    
+                                    
                                     <hr>
-    
+                                    
                                     <h2 id="panels">Bootstrap 3 List Groups</h2>
-    
+                                    
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <ul class="list-group">
@@ -370,11 +322,21 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <ul class="list-group">
-                                                <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> List item 1</li>
-                                                <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> List item 2</li>
-                                                <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Mobile-first</li>
-                                                <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Responsive</li>
-                                                <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Lightweight</li>
+                                                <li class="list-group-item">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span> List item 1
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span> List item 2
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span> Mobile-first
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span> Responsive
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span> Lightweight
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-4">
@@ -405,10 +367,9 @@
                                 <section>
                                 
                                 
-                                
                                 </section>
-                                
-                                
+                            
+                            
                             </div>
                         </div>
                     </div>
