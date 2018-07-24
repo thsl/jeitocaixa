@@ -101,9 +101,24 @@ small, .font_small {
 
 @font-face {
   font-family: 'margem';
+  src: url('@{font-path}/Margem-Thin_Web.woff2') format('woff2'),
+  url('@{font-path}/Margem-Thin_Web.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'margem';
+  src: url('@{font-path}/Margem-ThinItalic_Web.woff2') format('woff2'),
+  url('@{font-path}/Margem-ThinItalic_Web.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'margem';
   src: url('@{font-path}/Margem-Light_Web.woff2') format('woff2'),
   url('@{font-path}/Margem-Light_Web.woff') format('woff');
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -111,7 +126,7 @@ small, .font_small {
   font-family: 'margem';
   src: url('@{font-path}/Margem-LightItalic_Web.woff2') format('woff2'),
   url('@{font-path}/Margem-LightItalic_Web.woff') format('woff');
-  font-weight: 100;
+  font-weight: 300;
   font-style: italic;
 }
 
@@ -120,7 +135,7 @@ small, .font_small {
   font-family: 'margem';
   src: url('@{font-path}/Margem-Medium_Web.woff2') format('woff2'),
   url('@{font-path}/Margem-Medium_Web.woff') format('woff');
-  font-weight: 100;
+  font-weight: normal;
   font-style: normal;
 }
 
