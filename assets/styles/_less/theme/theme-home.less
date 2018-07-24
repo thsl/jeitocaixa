@@ -1,11 +1,14 @@
 
-
 #home {
   background: url("@{image-path-theme}/backgrounds/bck-base-001.jpg") top left no-repeat #014887;
   background-size: cover;
+
   margin: 0;
   padding: 0 0 60px 0;
   min-height: 100vh;
+  @media (max-width: @screen-lg) {
+    background-position: 10%;
+  }
   @media (max-width: @screen-sm) {
     background: url("@{image-path-theme}/backgrounds/bck-base-001.jpg") top right no-repeat #014887;
 
@@ -77,5 +80,98 @@
   }
   @media (max-width: @screen-sm) {
     margin-top: 349px;
+  }
+}
+
+.ball-itens {
+  .hover-item {
+    position: relative;
+
+    .item-a {
+      opacity: 1;
+      transform: translateX(0);
+      animation: fadeInFromNone 0.3s ease-in;
+      will-change: opacity, transform;
+    }
+    .item-b {
+      opacity: 0;
+      display: none;
+      position: relative;
+      transform: translateX(0);
+      animation: fadeInFromNone 0.3s ease-in;
+      will-change: opacity, transform;
+      .rounded-item {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -100%);
+        background-color: #017177;
+        font-size: @fontsize-sm;
+        padding: 50px 15px;
+        border: 2px solid #92ca53;
+      }
+    }
+    &:hover {
+      .item-a {
+        opacity: 0;
+        transform: translateX(0);
+        animation: fadeInFromNone 0.3s ease-out;
+        will-change: opacity, transform;
+      }
+      .item-b {
+        opacity: 1;
+        display: block;
+        transform: translateX(0);
+        animation: fadeInFromNone 0.3s ease-in;
+        will-change: opacity, transform;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeOutFromBlock {
+  0% {
+    position: relative;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  90% {
+    position: relative;
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  100% {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-999px);
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-999px);
+  }
+
+  1% {
+    position: relative;
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  100% {
+    position: relative;
+    opacity: 1;
+    transform: translateX(0);
   }
 }
