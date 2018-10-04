@@ -1,3 +1,3 @@
-# caixa-falepresidente
-Caixa: Fale com o presidente
-Para acessar: https://thsl.github.io/caixa-falepresidente/index.html
+# Jeito caixa de atender
+Caixa: Jeito Caixa
+Para acessar: https://thsl.github.io/jeitocaixa/
