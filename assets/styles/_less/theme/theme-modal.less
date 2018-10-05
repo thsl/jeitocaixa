@@ -1,0 +1,40 @@
+.modal-historia {
+  .modal-content {
+    position: relative;
+    background-color: transparent;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .modal-dialog{
+
+  }
+  background: url("@{image-path-theme}/backgrounds/bg-modal-01.png") bottom right no-repeat transparent;
+  background-size: cover;
+  .close{
+    background-color: #ffc016;
+    width: 50px;
+    height: 50px;
+    color: @white;
+    border: 1px solid @white;
+    border-radius: 50px;
+    opacity: 1;
+    float: none;
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+  .wrapper  {
+    filter: blur(3px) grayscale(100%);
+    transition: 0.5s;
+  }
+}

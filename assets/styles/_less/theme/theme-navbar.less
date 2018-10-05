@@ -5,23 +5,20 @@
   border: 0;
   width: 100%;
   color: @white;
-  top:0;
+  top: 0;
   left: 0;
   font-size: @fontsize-sm;
   a {
     color: @white;
-    &:hover{
+    &:hover {
       background-color: transparent;
     }
   }
-  .nav>li>a:focus, .nav>li>a:hover {
+  .nav > li > a:focus, .nav > li > a:hover {
     text-decoration: none;
     background-color: transparent;
   }
 }
-
-
-
 
 .user-info {
   background: url("@{image-path-theme}/structure/menu-bg.png") bottom left no-repeat transparent;
@@ -32,5 +29,18 @@
   }
   @media (max-width: @screen-md) {
     background: none;
+  }
+}
+
+.navbar-theme-stop {
+  position: relative;
+  background: url("@{image-path-theme}/backgrounds/bg-header-01.jpg") bottom left no-repeat transparent;
+  background-size: cover;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 10px;
+  .navbar-nav-theme{
+    margin: 0 30px;
   }
 }

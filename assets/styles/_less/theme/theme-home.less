@@ -11,6 +11,64 @@
   @media (max-width: @screen-sm) {
 
   }
+  .img-big {
+    position: absolute;
+    min-height: 100vh;
+    width: 60%;
+    overflow: hidden;
+    .img-big-content {
+      position: absolute;
+      bottom: 0;
+      left: -120px;
+      @media (max-width: @screen-sm) {
+        display: none;
+      }
+    }
+    @media (max-width: @screen-sm) {
+      width: 100%;
+      position: relative;
+      height: auto;
+      min-height: auto;
+    }
+  }
+
+
+
+  .content-master {
+    min-height: 100vh;
+    .clearfix();
+    width: 50%;
+    float: right;
+    position: relative;
+    .content-master-inner {
+      position: absolute;
+      top: 21%;
+      padding: 30px;
+      @media (max-width: @screen-sm) {
+        width: 100%;
+        top: 50px;
+        float: none;
+        position: relative;
+      }
+    }
+    @media (max-width: @screen-sm) {
+      width: 100%;
+      top: 50px;
+      float: none;
+    }
+  }
+
+  .logo-compromisso {
+    top: 25%;
+    right: 25%;
+    position: absolute;
+    @media (max-width: @screen-sm) {
+      top: 20px;
+      right: 0;
+      left: 10px;
+      position: relative;
+    }
+  }
 }
 
 .wrapper {
@@ -19,28 +77,8 @@
   .clearfix();
 }
 
-.img-big {
-  position: absolute;
-  min-height: 100vh;
-  width: 60%;
-  overflow: hidden;
-  .img-big-content {
-    position: absolute;
-    bottom: 0;
-    left: -120px;
-    @media (max-width: @screen-sm) {
-      display: none;
-    }
-  }
-  @media (max-width: @screen-sm) {
-    width: 100%;
-    position: relative;
-    height: auto;
-    min-height: auto;
-  }
-}
 
-.footer-assina {
+.footer-assina-home {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -49,38 +87,84 @@
   padding: 0 0 60px 0;
 }
 
-.content-master {
+
+#enviar {
+  background: url("@{image-path-theme}/backgrounds/bg-01.jpg") center left no-repeat #fff;
+  background-size: cover;
+
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
-  .clearfix();
-  width: 50%;
-  float: right;
-  position: relative;
-  .content-master-inner {
+  @media (max-width: @screen-lg) {
+  }
+  @media (max-width: @screen-sm) {
+
+  }
+  .img-big {
     position: absolute;
-    top: 21%;
-    padding: 30px;
+    min-height: 100vh;
+    width: 60%;
+    overflow: hidden;
+    right: 0;
+    .img-big-content {
+      position: absolute;
+      bottom: 0;
+      right: -120px;
+      @media (max-width: @screen-sm) {
+        display: none;
+      }
+    }
+    @media (max-width: @screen-sm) {
+      width: 100%;
+      position: relative;
+      height: auto;
+      min-height: auto;
+    }
+  }
+
+  .footer-assina {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    //height: 30px;
+    padding: 0 0 60px 0;
+  }
+
+  .content-master {
+    min-height: 100vh;
+    .clearfix();
+    width: 50%;
+    float: left;
+    position: relative;
+    .content-master-inner {
+      position: absolute;
+      top: 21%;
+      padding: 30px;
+      left: 20%;
+      @media (max-width: @screen-sm) {
+        width: 100%;
+        top: 50px;
+        float: none;
+        position: relative;
+      }
+    }
     @media (max-width: @screen-sm) {
       width: 100%;
       top: 50px;
       float: none;
-      position: relative;
     }
   }
-  @media (max-width: @screen-sm) {
-    width: 100%;
-    top: 50px;
-    float: none;
-  }
-}
 
-.logo-compromisso {
-  top: 25%;
-  right: 25%;
-  position: absolute;
-  @media (max-width: @screen-sm) {
-    top: 20px;
-    right: 0;
-    left: 10px;
-    position: relative;
+  .logo-compromisso {
+    top: 25%;
+    right: 25%;
+    position: absolute;
+    @media (max-width: @screen-sm) {
+      top: 20px;
+      right: 0;
+      left: 10px;
+      position: relative;
+    }
   }
 }
