@@ -1,72 +1,111 @@
-#internals {
-  background: url("@{image-path-theme}/backgrounds/bck-base-internals-001.jpg") top left no-repeat #014887;
-  background-size: cover;
-  margin: 0;
-  padding: 0 0 180px 0;
-  min-height: 100vh;
-  .wrapper {
-    position: relative;
+.header-internal {
+  height: 50vh;
+  overflow: hidden;
+  &.header-bg-01 {
+    background: url("@{image-path-theme}/backgrounds/bg-02.jpg") bottom left no-repeat transparent;
+    background-size: cover;
   }
-  @media (max-width: @screen-sm) {
-  }
-}
-
-#internals-b {
-  background: url("@{image-path-theme}/backgrounds/bck-base-internal-header.jpg") top left repeat-x @white;
-
-  margin: 0;
-  padding: 0 0 180px 0;
-  min-height: 100vh;
-  .wrapper {
+  .header-internal-inner {
     position: relative;
-  }
+    height: 50vh;
+    .img-header {
+      width: 600px;
+      position: absolute;
+      bottom: 0;
+      left: 12%;
+      @media (max-width: @screen-md) {
+        left: -20%;
+        bottom: 0;
+      }
+      @media (max-width: @screen-sm) {
+        display: none;
+      }
 
-  .inside-header {
-    padding-top: 160px;
-    position: relative;
-    width: 100%;
-
-    @media (max-width: @screen-sm) {
-      padding-top: 80px;
+    }
+    .logo-jeito {
+      width: 280px;
+      position: absolute;
+      top: 25vh;
+      right: 25%;
+      @media (max-width: @screen-md) {
+        left: 25%;
+      }
     }
   }
-
 }
 
-.content-inner {
-  background-color: @white;
-  border-radius: 8px;
-  box-shadow: 0 3px 15px 4px rgba(0,0,0,0.35);
-  padding: 30px;
-  min-height: 100vh;
-  margin-bottom: 50px;
-}
+.grid-historias {
+  margin: 0;
+  padding: 0;
+  .grid-hist-item {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    .grid-hist-content {
+      height: 50vh;
+      position: relative;
+      .grid-btn {
+        position: absolute;
+        bottom: 0;
+        padding: 20px 60px 20px 20px;
+        text-align: left;
+        background: url("@{image-path-theme}/icones/bullet-grid.jpg") top right no-repeat #e56b58;
 
-.progress {
-  transform: skew(-20deg, 0deg);
-  border-radius: 0;
-  border: 0;
-  height: 12px;
-  margin-bottom: 4px;
-  .progress-bar {
-    box-shadow: none;
-    background: #4fc0aa; /* Old browsers */
-    background: -moz-linear-gradient(left, #4fc0aa 0%, #a3ce3c 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #4fc0aa 0%, #a3ce3c 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #4fc0aa 0%, #a3ce3c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4fc0aa', endColorstr='#a3ce3c', GradientType=1); /* IE6-9 */
+        width: 100%;
+        opacity: 1;
+        transition: opacity .25s ease-out;
+      }
+      &.grid-bg-cover {
+        background: bottom left no-repeat transparent;
+        background-size: cover;
+        &:hover {
+
+        }
+      }
+      .grid-hist-content-overlay {
+        height: 100%;
+        opacity: 0;
+        transition: opacity .25s ease-out;
+        padding: 50px 60px;
+      }
+      &:hover {
+        .grid-hist-content-overlay {
+          opacity: 1;
+          transition: opacity .25s ease-out;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdce02+0,ff856d+49,e15b42+100&0.95+0,0.95+100 */
+          background: -moz-linear-gradient(45deg, rgba(253, 206, 2, 0.95) 0%, rgba(255, 133, 109, 0.95) 49%, rgba(225, 91, 66, 0.95) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(45deg, rgba(253, 206, 2, 0.95) 0%, rgba(255, 133, 109, 0.95) 49%, rgba(225, 91, 66, 0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(45deg, rgba(253, 206, 2, 0.95) 0%, rgba(255, 133, 109, 0.95) 49%, rgba(225, 91, 66, 0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2fdce02', endColorstr='#f2e15b42', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+        }
+        .grid-btn {
+          opacity: 0;
+          transition: opacity .25s ease-out;
+        }
+      }
+    }
+  }
+  .progress {
+    height: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 50px;
+    -webkit-box-shadow: none;
+    border: 1px solid @white;
+    padding: 2px;
+    .progress-bar {
+      border-radius: 50px;
+      background-color: @white;
+    }
   }
 }
 
-.circle {
-  .percentual {
-    font-size: @fontsize-xs;
-  }
-  .circles-text {
-    left: 70px !important;
-  }
-}
 
-.content-body {
 
-}
+
+
+
+
+

@@ -1,0 +1,36 @@
+.navbar-theme {
+  position: absolute;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 0;
+  width: 100%;
+  color: @white;
+  top:0;
+  left: 0;
+  font-size: @fontsize-sm;
+  a {
+    color: @white;
+    &:hover{
+      background-color: transparent;
+    }
+  }
+  .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+
+
+
+
+.user-info {
+  background: url("@{image-path-theme}/structure/menu-bg.png") bottom left no-repeat transparent;
+  background-size: cover;
+  padding: 20px 40px 30px 30px;
+  .user-info-inner {
+
+  }
+  @media (max-width: @screen-md) {
+    background: none;
+  }
+}
